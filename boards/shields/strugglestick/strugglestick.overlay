@@ -25,7 +25,7 @@
          row-gpios
             = <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
 
         col-gpios
@@ -46,7 +46,7 @@
 		compatible = "zmk,analog-input";
 		sampling-hz = <100>;
 		x-ch {
-			io-channels = <&adc 5>;
+			io-channels = <&adc9>;
 			mv-mid = <512>;
 			mv-min-max = <10>;
 			mv-deadzone = <100>;
@@ -57,7 +57,7 @@
 			input-code = <INPUT_REL_X>;
 		};
 		y-ch {
-			io-channels = <&adc 7>;
+			io-channels = <&adc 8>;
 			mv-mid = <512>;
 			mv-min-max = <10>;
 			mv-deadzone = <100>;
