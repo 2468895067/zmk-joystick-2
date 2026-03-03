@@ -1,7 +1,7 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-# if SHIELD_STRUGGLESTICK
+if SHIELD_STRUGGLESTICK
 
 config ZMK_KEYBOARD_NAME
     default "StruggleStick"
@@ -43,4 +43,4 @@ config ANALOG_INPUT_LOG_DBG_REPORT
 #     default y
 # # # # # # # # # # # # # # # # # # # 
 
-# endif
+endif
