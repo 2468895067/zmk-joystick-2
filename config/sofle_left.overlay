@@ -85,7 +85,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
 		sampling-hz = <100>;
 		x-ch {
 			io-channels = <&adc 5>;
-			mv-mid = <250>;
+			mv-mid = <1650>;
 			mv-min-max = <10>;
 			mv-deadzone = <100>;
 			scale-multiplier = <1>;
@@ -95,8 +95,8 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
 			input-code = <INPUT_REL_X>;
 		};
 		y-ch {
-			io-channels = <&adc 7>;
-			mv-mid = <250>;
+			io-channels = <&adc 0>;
+			mv-mid = <1650>;
 			mv-min-max = <10>;
 			mv-deadzone = <100>;
 			scale-multiplier = <1>;
