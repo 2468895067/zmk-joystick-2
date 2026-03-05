@@ -12,12 +12,18 @@
 	status = "okay";
 };
 
+
+&pro_micro_i2c {
+    status = "disabled";
+};
+
+
 / {
 	anin0: analog_input_0 {
 		compatible = "zmk,analog-input";
 		sampling-hz = <100>;
 		x-ch {
-			io-channels = <&adc 1>;
+			io-channels = <&adc 2>;
 			mv-mid = <1650>;
 			mv-min-max = <10>;
 			mv-deadzone = <100>;
@@ -28,7 +34,7 @@
 			input-code = <INPUT_REL_X>;
 		};
 		y-ch {
-			io-channels = <&adc 2>;
+			io-channels = <&adc 3>;
 			mv-mid = <1650>;
 			mv-min-max = <10>;
 			mv-deadzone = <100>;
