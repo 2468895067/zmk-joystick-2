@@ -27,23 +27,23 @@
         layer_0 {
             bindings = <
             &mo 1      &kp PAGE_DOWN  &kp ESC    &mo 4         &kp DOWN   &kp CAPS        &kp A  &kp A  &kp A  &kp A  &kp A  &kp A
-            &kp HOME   &kp END        &kp ENTER  &kp LEFT      &kp RIGHT  &mo 3           &kp A  &kp A  &kp A  &kp A  &kp A  &kp A
-            &kp PG_UP  &mo 2          &mkp LCLK  &kp UP_ARROW  &trans     &trans          &kp A  &kp A  &kp A  &kp A  &kp A  &kp A
+            &kp HOME   &kp END        &kp ENTER  &kp LEFT      &kp RIGHT  &tog 3           &kp A  &kp A  &kp A  &kp A  &kp A  &kp A
+            &kp PG_UP  &tog 2          &mkp LCLK  &kp UP_ARROW  &trans     &trans          &kp A  &kp A  &kp A  &kp A  &kp A  &kp A
             >;
         };
 
         layer_1 {
             bindings = <
             &trans  &kp V  &kp C      &mo 4  &kp Z   &kp LEFT_SHIFT        &trans  &trans  &trans  &trans  &trans  &trans
-            &kp I   &kp O  &kp LCTRL  &kp J  &kp L   &mo 3                 &trans  &trans  &trans  &trans  &trans  &trans
-            &kp V   &mo 2  &kp E      &kp K  &trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans
+            &kp I   &kp O  &kp LCTRL  &kp J  &kp L   &tog 3                 &trans  &trans  &trans  &trans  &trans  &trans
+            &kp V   &tog 2  &kp E      &kp K  &trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         layer_2 {
             bindings = <
             &none  &kp N   &kp G      &mo 4      &kp X       &kp LSHIFT        &trans  &trans  &trans  &trans  &trans  &trans
-            &kp Q  &kp M   &mkp LCLK  &kp COMMA  &kp PERIOD  &mo 3             &trans  &trans  &trans  &trans  &trans  &trans
+            &kp Q  &kp M   &mkp LCLK  &kp COMMA  &kp PERIOD  &tog 3             &trans  &trans  &trans  &trans  &trans  &trans
             &kp P  &trans  &kp H      &kp Y      &trans      &trans            &trans  &trans  &trans  &trans  &trans  &trans
             >;
 			// MOUSE MOVE
