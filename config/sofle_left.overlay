@@ -96,9 +96,9 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
 		};
 		y-ch {
 			io-channels = <&adc 5>;
-			mv-mid = <1250>;
+			mv-mid = <1750>;
 			mv-min-max = <10>;
-			mv-deadzone = <600>;
+			mv-deadzone = <400>;
 			scale-multiplier = <1>;
 			scale-divisor = <1>;
 			invert;
