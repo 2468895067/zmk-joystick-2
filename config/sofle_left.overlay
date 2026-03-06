@@ -95,7 +95,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
 			input-code = <INPUT_REL_X>;
 		};
 		y-ch {
-			io-channels = <&adc 1>;
+			io-channels = <&adc 5>;
 			mv-mid = <1250>;
 			mv-min-max = <10>;
 			mv-deadzone = <600>;
