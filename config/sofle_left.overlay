@@ -80,7 +80,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
     status = "disabled";
 };
 / {
-	anin0: analog_input_0 {
+	anin0 {
 		compatible = "zmk,analog-input";
 		sampling-hz = <100>;
 		y-ch {
@@ -101,7 +101,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
 		};
 	};
 
-	anin1: analog_input_1 {
+	anin1 {
 		compatible = "zmk,analog-input";
 		sampling-hz = <100>;
 		x-ch {
