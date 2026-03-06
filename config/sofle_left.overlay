@@ -128,15 +128,15 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
 };
 
 / {
-    joystick_listener {
+    joystick_listener_0 {
+		status = "disabled";
         compatible = "zmk,input-listener";
         device = <&anin0>;
-    };
+	};
 
-	// SENSOR BINDING
-    sensors: sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&joystick_listener>;
-    };
-
+    joystick_listener_1 {
+		status = "disabled";
+        compatible = "zmk,input-listener";
+        device = <&anin1>;
+	};
 };
