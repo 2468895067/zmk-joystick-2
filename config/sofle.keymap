@@ -35,7 +35,9 @@
 		        compatible = "zmk,input-listener";
 		        device = <&anin0>;
 			};
-
+				&joystick_listener_1 {
+						status = "disables";
+				};
         };
 
         layer_1 {
@@ -48,6 +50,10 @@
 		    joystick_listener_1 {
 		        compatible = "zmk,input-listener";
 		        device = <&anin1>;
+				
+				&joystick_listener_0 {
+						status = "disables";
+				};
 			};
         };
 
