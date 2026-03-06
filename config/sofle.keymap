@@ -35,7 +35,7 @@
             &kp Q  &kp M   &mkp LCLK  &kp COMMA  &kp PERIOD  &mo 3             &trans  &trans  &trans  &trans  &trans  &trans
             &kp P  &trans  &kp H      &kp Y      &trans      &trans            &trans  &trans  &trans  &trans  &trans  &trans
             >;
-
+        };
 
         layer_3 {
             bindings = <
@@ -43,7 +43,6 @@
             &kp R  &kp F  &trans         &kp NUMBER_3  &kp NUMBER_4  &none                 &trans  &trans  &trans  &trans  &trans  &trans
             &kp T  &none  &kp BACKSPACE  &kp NUMBER_1  &trans        &trans                &trans  &trans  &trans  &trans  &trans  &trans
             >;
-
         };
 
         layer_4 {
