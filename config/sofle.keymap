@@ -35,12 +35,7 @@
             &kp Q  &kp M   &mkp LCLK  &kp COMMA  &kp PERIOD  &mo 3             &trans  &trans  &trans  &trans  &trans  &trans
             &kp P  &trans  &kp H      &kp Y      &trans      &trans            &trans  &trans  &trans  &trans  &trans  &trans
             >;
-			// MOUSE MOVE
-		    joystick_listener_1 {
-		        compatible = "zmk,input-listener";
-		        device = <&anin1>;
-			};
-        };
+
 
         layer_3 {
             bindings = <
