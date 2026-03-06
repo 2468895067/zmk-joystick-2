@@ -30,7 +30,9 @@
             &kp HOME   &kp END        &kp ENTER  &kp LEFT      &kp RIGHT  &mo 3           &kp A  &kp A  &kp A  &kp A  &kp A  &kp A
             &kp PG_UP  &mo 2          &mkp LCLK  &kp UP_ARROW  &trans     &trans          &kp A  &kp A  &kp A  &kp A  &kp A  &kp A
             >;
-        sensor-bindings = <&ain1>;
+            joystick_listener_1 {
+	    	status = "okay";
+	        };
         };
 
         layer_1 {
@@ -39,7 +41,9 @@
             &kp I   &kp O  &kp LCTRL  &kp J  &kp L   &mo 3                 &trans  &trans  &trans  &trans  &trans  &trans
             &kp V   &mo 2  &kp E      &kp K  &trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans
             >;
-
+            joystick_listener_0 {
+	    	status = "okay";
+	        };
         };
 
         layer_2 {
