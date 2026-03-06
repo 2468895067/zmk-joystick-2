@@ -30,6 +30,7 @@
             &kp HOME   &kp END        &kp ENTER  &kp LEFT      &kp RIGHT  &mo 3           &kp A  &kp A  &kp A  &kp A  &kp A  &kp A
             &kp PG_UP  &mo 2          &mkp LCLK  &kp UP_ARROW  &trans     &trans          &kp A  &kp A  &kp A  &kp A  &kp A  &kp A
             >;
+        sensor-bindings = <&ain1>;
         };
 
         layer_1 {
