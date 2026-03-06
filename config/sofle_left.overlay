@@ -69,36 +69,10 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
     status = "disabled";
 };
 / {
-	// MOUSE MOVE
-	anin0: analog_input_0 {
-		compatible = "zmk,analog-input";
-		sampling-hz = <100>;
-		x-ch {
-			io-channels = <&adc 0>;
-			mv-mid = <1650>;
-			mv-min-max = <10>;
-			mv-deadzone = <200>;
-			scale-multiplier = <1>;
-			scale-divisor = <1>;
-			invert;
-			evt-type = <INPUT_EV_REL>;
-			input-code = <INPUT_REL_X>;
-		};
-		y-ch {
-			io-channels = <&adc 5>;
-			mv-mid = <2050>;
-			mv-min-max = <10>;
-			mv-deadzone = <400>;
-			scale-multiplier = <1>;
-			scale-divisor = <1>;
-			invert;
-			evt-type = <INPUT_EV_REL>;
-			input-code = <INPUT_REL_Y>;
-		};
-	};
-
 	// MOUSE WHEEL
-	anin1: analog_input_1 {
+	anin0: analog_input_0 {
+
+		status = "disabled";
 		compatible = "zmk,analog-input";
 		sampling-hz = <100>;
 		x-ch {
@@ -125,17 +99,45 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
 		};
 	};
 
+	// MOUSE MOVE
+	anin1: analog_input_1 {
+
+		status = "disabled";
+		compatible = "zmk,analog-input";
+		sampling-hz = <100>;
+		x-ch {
+			io-channels = <&adc 0>;
+			mv-mid = <1650>;
+			mv-min-max = <10>;
+			mv-deadzone = <200>;
+			scale-multiplier = <1>;
+			scale-divisor = <1>;
+			invert;
+			evt-type = <INPUT_EV_REL>;
+			input-code = <INPUT_REL_X>;
+		};
+		y-ch {
+			io-channels = <&adc 5>;
+			mv-mid = <2050>;
+			mv-min-max = <10>;
+			mv-deadzone = <400>;
+			scale-multiplier = <1>;
+			scale-divisor = <1>;
+			invert;
+			evt-type = <INPUT_EV_REL>;
+			input-code = <INPUT_REL_Y>;
+		};
+	};
+
 };
 
 / {
     joystick_listener_0 {
-		status = "disabled";
         compatible = "zmk,input-listener";
         device = <&anin0>;
 	};
 
     joystick_listener_1 {
-		status = "disabled";
         compatible = "zmk,input-listener";
         device = <&anin1>;
 	};
