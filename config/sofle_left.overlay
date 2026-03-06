@@ -94,11 +94,6 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
 			evt-type = <INPUT_EV_REL>;
 			input-code = <INPUT_REL_X>;
 		};
-	};
-
-	anin1: analog_input_1 {
-		compatible = "zmk,analog-input";
-		sampling-hz = <100>;
 		y-ch {
 			io-channels = <&adc 1>;
 			mv-mid = <1250>;
@@ -111,16 +106,12 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
 			input-code = <INPUT_REL_Y>;
 		};
 	};
+
 };
 
 / {
-    joystick_listener_y {
+    joystick_listener {
         compatible = "zmk,input-listener";
         device = <&anin0>;
     };
-    joystick_listener_x {
-        compatible = "zmk,input-listener";
-        device = <&anin1>;
-    };
-
 };
