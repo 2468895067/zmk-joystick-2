@@ -12,17 +12,6 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-    // Activate ADJUST layer by pressing raise and lower
-
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        adjust_layer {
-            if-layers = <0 0>;
-            then-layer = <0>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -30,13 +19,8 @@
             bindings = <
             &mo 1      &kp PAGE_DOWN  &kp ESC    &mo 4         &kp DOWN   &kp CAPS        &kp A  &kp A  &kp A  &kp A  &kp A  &kp A
             &kp HOME   &kp END        &kp ENTER  &kp LEFT      &kp RIGHT  &mo 3           &kp A  &kp A  &kp A  &kp A  &kp A  &kp A
-            &kp PG_UP  &zip_xy_to_scroll_mapper          &mkp LCLK  &kp UP_ARROW  &trans     &trans          &kp A  &kp A  &kp A  &kp A  &kp A  &kp A
+            &kp PG_UP  &mo 2          &mkp LCLK  &kp UP_ARROW  &trans     &trans          &kp A  &kp A  &kp A  &kp A  &kp A  &kp A
             >;
-			// MOUSE MOVE
-		    joystick_listener_1 {
-		        compatible = "zmk,input-listener";
-		        device = <&anin1>;
-			};
         };
 
         layer_1 {
@@ -53,6 +37,11 @@
             &kp Q  &kp M   &mkp LCLK  &kp COMMA  &kp PERIOD  &mo 3             &trans  &trans  &trans  &trans  &trans  &trans
             &kp P  &trans  &kp H      &kp Y      &trans      &trans            &trans  &trans  &trans  &trans  &trans  &trans
             >;
+			// MOUSE MOVE
+		    joystick_listener_1 {
+		        compatible = "zmk,input-listener";
+		        device = <&anin1>;
+			};
         };
 
         layer_3 {
@@ -61,6 +50,11 @@
             &kp R  &kp F  &trans         &kp NUMBER_3  &kp NUMBER_4  &none                 &trans  &trans  &trans  &trans  &trans  &trans
             &kp T  &none  &kp BACKSPACE  &kp NUMBER_1  &trans        &trans                &trans  &trans  &trans  &trans  &trans  &trans
             >;
+			// MOUSE WHEEL
+		    joystick_listener_0 {
+		        compatible = "zmk,input-listener";
+		        device = <&anin0>;
+			};
         };
 
         layer_4 {
