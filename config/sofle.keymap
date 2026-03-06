@@ -19,11 +19,6 @@
             &kp HOME   &kp END        &kp ENTER  &kp LEFT      &kp RIGHT  &mo 3           &kp A  &kp A  &kp A  &kp A  &kp A  &kp A
             &kp PG_UP  &mo 2          &mkp LCLK  &kp UP_ARROW  &trans     &trans          &kp A  &kp A  &kp A  &kp A  &kp A  &kp A
             >;
-			// MOUSE MOVE
-		    joystick_listener_1 {
-		        compatible = "zmk,input-listener";
-		        device = <&anin1>;
-			};
         };
 
         layer_1 {
@@ -40,6 +35,11 @@
             &kp Q  &kp M   &mkp LCLK  &kp COMMA  &kp PERIOD  &mo 3             &trans  &trans  &trans  &trans  &trans  &trans
             &kp P  &trans  &kp H      &kp Y      &trans      &trans            &trans  &trans  &trans  &trans  &trans  &trans
             >;
+			// MOUSE MOVE
+		    joystick_listener_1 {
+		        compatible = "zmk,input-listener";
+		        device = <&anin1>;
+			};
         };
 
         layer_3 {
