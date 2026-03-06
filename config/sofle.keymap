@@ -41,8 +41,7 @@
             &kp I   &kp O  &kp LCTRL  &kp J  &kp L   &mo 3                 &trans  &trans  &trans  &trans  &trans  &trans
             &kp V   &mo 2  &kp E      &kp K  &trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans
             >;
-            joystick_listener_0 {
-	    	status = "okay";
+
 	        };
         };
 
