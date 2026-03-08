@@ -7,5 +7,5 @@
 #
 ---
 include:
-  - board: nice_nano@1.0.0//zmk
+  - board: nrfmicro_11
     shield: sofle_left
