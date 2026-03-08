@@ -7,5 +7,5 @@
 #
 ---
 include:
-  - board: nrfmicro@1.1.0/nrf52840/zmk
+  - board: nrfmicro@1.1.0/nrf52840
     shield: sofle_left
